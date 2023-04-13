@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Adyacente */
+        div p{
+            color: cadetblue;
+        }
+        /* Hijo directo */
+        div > div {
+            background: plum;
+        }
+        .es{
+            background: brown;
+        }
+        /* Adyacentes */
+        div + section{
+            background: papayawhip;
+        }
+        /* General de hermanos */
+        div ~ p {
+            color: powderblue;
+        }
+        </style>
+</head>
+<body>
+    <!-- Descendientes -->
+    <div>
+        <p>JUST</p>
+        <p>DO</p>
+        <p>IT</p>
+    </div>
+    <!-- Hijo directo -->
+    <div>
+        <div>
+            <p>CEO</p>
+            <div class="es">ENTREPENEUR</div>
+        </div>
+        <!-- General de hermanos. El efecto aplica para todos los p que esten despues de un div -->
+        <p>Learn<p>
+        <p>Is the</p>
+        <p>Way</p>
+    </div>
+    <!-- Adyacentes -->
+    <div>
+        BE
+    </div>
+    <section>
+        GREAT
+    </section>
+    
+</body>
+</html>
