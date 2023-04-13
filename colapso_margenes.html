@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Ejemplo con colapso de margenes */
+        div{
+            margin: 20px;
+            background: palegoldenrod;
+        }
+
+        /* Ejemplo sin colapso de margenes */
+        .container{
+            display: flex;
+            margin: 20px;
+            flex-direction: column;
+        }
+        .item{
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Usando flex-box</h1>
+    <div class="container">
+
+        <div class="item">Sin</div>
+        <div class="item">Colapso</div>
+        
+        
+    </div>
+    <h1>Usando dos bloques adyacentes</h1>
+    <p>El colapso surge cuando hay doy elementos tipo bloques adyacentes:</p>
+
+    <div>Con</div>
+    <div>Colapso</div>
+</body>
+</html>
