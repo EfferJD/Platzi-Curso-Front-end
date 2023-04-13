@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: salmon;
+        }
+        p::first-letter{
+            color: blue;
+        }
+        p::before{
+            content: "👌";
+        }
+        P::after{
+            content: "🙌";
+        }
+        p:hover{
+            color: white;
+        }
+        button {
+            color: blue;
+        }
+        button:active {
+            color: darkblue;
+        }
+        div p:nth-child(2){
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <p>Pasame el mouse por encima</p>
+    <button>Login</button>
+    <div>
+        <p>Get</p>
+        <p>Ready</p>
+        <p>For Battle</p>
+    </div>
+
+    
+</body>
+</html>
